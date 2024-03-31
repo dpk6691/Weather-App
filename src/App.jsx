@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     const getLocation = async () => {
       try {
-        const response = await axios.get("http://ip-api.com/json/");
+        const response = await axios.get("https://ipapi.co/json/");
         setLocation(response.data.city);
         // console.log(response.data.city);
       } catch (error) {
